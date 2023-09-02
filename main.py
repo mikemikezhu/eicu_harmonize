@@ -72,7 +72,7 @@ def get_age_group(age):
 
 def get_bmi(weight_kg, height_cm):
 
-    if pd.isna(weight_kg) or pd.isna(height_cm):
+    if pd.isna(weight_kg) or pd.isna(height_cm) or weight_kg == 0 or height_cm == 0:
         return "bmi_normal"
 
     height_m = height_cm / 100.0
