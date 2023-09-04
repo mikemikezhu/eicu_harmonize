@@ -7,7 +7,7 @@ The eICU Collaborative Research Database is pivotal for understanding intensive 
 - Some drugs share the same identity (e.g. "aspirin" and "acetylsalicylic acid"), and patient data can be merged across all identities of said medications. 
 - The dosage information in the drug names can be disregarded (e.g. "aspirin 10 mg").
 
-This project aims to combine drug names with the same identity and harmonize the eICU dataset, making it easier for researchers to train models effectively.
+This project aims to combine drug names with the same identity and harmonize the eICU dataset, making it easier for researchers to train models effectively. The harmonized eICU dataset can be downloaded at https://drive.google.com/file/d/1tpvntkx4nCUISEvHvCOOw4UgLELNuM9b/view?usp=sharing.
 
 ## Impute Missing Drug Names
 
@@ -49,7 +49,7 @@ The overlap percentage before / after harmonization is as follows:
 
 ## Create Harmonized eICU Dataset
 
-The dataset includes TODO patients treated in TODO hospitals. Each patient's information comprises several features, including the drugs, age, sex, race, and BMI. These characteristics are represented in a binary format. Specifically, when a feature is represented by the value 1, it indicates that the patients belong to a specific category. For example, if a patient's age, gender, race, or BMI feature is marked as 1, they fall within a particular age group, gender category, race group, or BMI range.
+The dataset includes 200,859 patients treated in 208 hospitals. Each patient's information comprises several features, including the drugs, age, sex, race, and BMI. These characteristics are represented in a binary format. Specifically, when a feature is represented by the value 1, it indicates that the patients belong to a specific category. For example, if a patient's age, gender, race, or BMI feature is marked as 1, they fall within a particular age group, gender category, race group, or BMI range.
 Similarly, when a drug feature is indicated as 1, the patient has been prescribed that specific drug. The dataset also encompasses three outcome labels: death, ventilator use, and sepsis. These labels are also binary, with a value of 1 indicating the presence of a specific outcome or condition for the patient, such as death, ventilator support, or sepsis.
 
 ## User Manual
