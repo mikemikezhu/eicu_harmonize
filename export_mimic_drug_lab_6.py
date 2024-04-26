@@ -243,7 +243,7 @@ len(selected_patients)
 max(selected_patients), min(selected_patients)
 
 # Select patients whose value is from 0 to 30000
-selected_patients = [patient for patient in selected_patients if patient > 50000 and patient <= 60000]
+selected_patients = [patient for patient in selected_patients if patient > 80000 and patient <= 90000]
 len(selected_patients)
 
 # MIMIC columns should align with eICU columns
@@ -318,6 +318,6 @@ for index, patient in tqdm(enumerate(selected_patients)):
 
     mimic_data = pd.concat([mimic_data, mimic_row], ignore_index=True)
 
-mimic_data.to_csv('mimic_drug_lab_3.csv', index=False)
+mimic_data.to_csv('mimic_drug_lab_6.csv', index=False)
 
 mimic_data.head()
